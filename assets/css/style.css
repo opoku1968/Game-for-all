@@ -1,0 +1,34 @@
+/* universal selector - Applies to whole document */
+* {}
+
+/* To center everything in game */
+    .game {}
+
+ /* Title of the game */
+     .title {}
+
+ /* Score Board */
+ .score {}
+
+ /* Score  */
+ .p-count,
+ .c-count {}
+
+
+ /* displaying three buttons in one line */
+ .options {}
+ /* Styling on all three buttons */
+ .rock,
+ .paper,
+ .scissor {}
+
+.move {}
+
+/* Reload button style */
+.reload {}
+
+.result {}
+
+/* Responsive Design */
+@media screen and (max-width: 612px) {}
+
