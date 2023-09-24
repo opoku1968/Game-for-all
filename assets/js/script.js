@@ -123,5 +123,13 @@ const choiceNumber = Math.floor(Math.random() * 3);
         })
     }
 
+    // Calling playGame function inside game
+    playGame();
+
+}
+
+// Calling the game function
+game();
+
 
                 
