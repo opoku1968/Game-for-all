@@ -16,6 +16,17 @@ const game = () => {
 
 
 // Function to start playing game
+        playerOptions.forEach(option => {
+            option.addEventListener('click', function () {
+
+                const movesLeft = document.querySelector('.movesleft');
+                moves++;
+                movesLeft.innerText = `Moves Left: ${10 - moves}`;
+
+
+                const choiceNumber = Math.floor(Math.random() * 3);
+                const computerChoice = computerOptions[choiceNumber];
+
 
 
  // Function to check who wins
