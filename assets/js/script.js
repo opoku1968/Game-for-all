@@ -33,4 +33,12 @@ const choiceNumber = Math.floor(Math.random() * 3);
  winner(this.innerText, computerChoice)
  
  // Calling gameOver function after 10 moves
+     if (moves == 10) {
+         gameOver(playerOptions, movesLeft);}
+ })
+ 
+ })
+}
+
+
                 
