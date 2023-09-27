@@ -4,11 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- link html to style-->
     <link rel="stylesheet" href="assets/css/style.css" />
+    <!--Titel -->
     <title>Rock Paper Scissor</title>
   </head>
 
   <body>
+    <!-- Logo -->
     <header>
       <nav class="nav collapsible">
         <a><img src="assets/images/ya.png" alt="" /></a>
@@ -18,7 +21,22 @@
       <!--Title -->
       <div class="title">Rock Paper Scissor</div>
 
-      <!--isplay Score of player and computer -->
+      <!-- display fingers -->
+    <div class="player pics">
+        <div class="pl1">
+            <img src="all 3.jpg" alt="" style="width: 150px; height: 150px;" id="playerChoiceImg">
+            <!-- <h3 id="playerChoiceTxt"></h3> -->
+        </div>
+    
+        <div class="pl3"></div>
+    
+        <div class="pl2">
+            <img src="all 3.jpg" alt="" style="width: 150px; height: 150px;" id="computerChoiceImg">
+            <!-- <h3 id="computerChoiceTxt"></h3> -->
+        </div>
+    </div>
+
+      <!--display Score of player and computer -->
       <div class="score">
         <div class="playerScore">
           <h2>Player</h2>
@@ -35,7 +53,7 @@
       <!--Number of moves left before game ends -->
       <div class="movesleft">Moves Left: 10</div>
 
-      <!--Options available to player to play game -->
+      <!--Options available for player to play game -->
       <div class="options">
         <button class="rock">Rock</button>
         <button class="paper">Paper</button>

@@ -1,3 +1,26 @@
+// VARIABLES
+const choices = [
+    {
+        id: 1,
+        name: "Rock",
+        image: "rock.jpg"
+    },
+    {
+        id: 2,
+        name: "Paper",
+        image: "paper.jpg"
+    },
+    {
+        id: 3,
+        name: "Scissors",
+        image: "scissors.jpg"
+    }];
+
+let playerChoiceImg = document.querySelector("#playerChoiceImg");
+
+let computerChoiceImg = document.querySelector("#computerChoiceImg");
+
+
 // Complete logic of game inside this function
 const game = () => {
     let playerScore = 0;
@@ -5,40 +28,41 @@ const game = () => {
     let moves = 0;
 
 
-// Function to
-const playGame = () => {
-const rockBtn = document.querySelector('.rock');
-const paperBtn = document.querySelector('.paper');
- const scissorBtn = document.querySelector('.scissor');
- const playerOptions = [rockBtn, paperBtn, scissorBtn];
- const computerOptions = ['rock', 'paper', 'scissors']
+    // Function to
+    const playGame = () => {
+        const rockBtn = document.querySelector('.rock');
+        const paperBtn = document.querySelector('.paper');
+        const scissorBtn = document.querySelector('.scissor');
+        const playerOptions = [rockBtn, paperBtn, scissorBtn];
+        const computerOptions = ['rock', 'paper', 'scissors'];
 
 
 
-// Function to start playing game
- playerOptions.forEach(option => {
- option.addEventListener('click', function () {
+        // Function to start playing game
+        playerOptions.forEach(option => {
+            option.addEventListener('click', function () {
 
- const movesLeft = document.querySelector('.movesleft');
- moves++;
- movesLeft.innerText = `Moves Left: ${10 - moves}`;
-
-
-const choiceNumber = Math.floor(Math.random() * 3);
- const computerChoice = computerOptions[choiceNumber];
+                const movesLeft = document.querySelector('.movesleft');
+                moves++;
+                movesLeft.innerText = `Moves Left: ${10 - moves}`;
 
 
+                const choiceNumber = Math.floor(Math.random() * 3);
+                const computerChoice = computerOptions[choiceNumber];
 
- // Function to check who wins
- winner(this.innerText, computerChoice)
- 
- // Calling gameOver function after 10 moves
-     if (moves == 10) {
-         gameOver(playerOptions, movesLeft);}
- })
- 
- })
-}
+
+
+                // Function to check who wins
+                winner(this.innerText, computerChoice);
+
+                // Calling gameOver function after 10 moves
+                if (moves == 10) {
+                    gameOver(playerOptions, movesLeft);
+                }
+            });
+
+        });
+    };
 
 
     // Function to decide winner
@@ -48,8 +72,31 @@ const choiceNumber = Math.floor(Math.random() * 3);
         const computerScoreBoard = document.querySelector('.c-count');
         player = player.toLowerCase();
         computer = computer.toLowerCase();
+
+        if (player == 'rock') {
+            playerChoiceImg.src = choices[0].image;
+        }
+        if (computer == 'rock') {
+            computerChoiceImg.src = choices[0].image;
+        }
+        if (player == 'paper') {
+            playerChoiceImg.src = choices[1].image;
+        }
+        if (computer == 'paper') {
+            computerChoiceImg.src = choices[1].image;
+        }
+        if (player == 'scissors') {
+            playerChoiceImg.src = choices[2].image;
+        }
+        if (computer == 'scissors') {
+            computerChoiceImg.src = choices[2].image;
+        }
+
+
         if (player === computer) {
             result.textContent = 'Tie';
+
+
         }
         else if (player == 'rock') {
             if (computer == 'paper') {
@@ -85,7 +132,7 @@ const choiceNumber = Math.floor(Math.random() * 3);
                 playerScoreBoard.textContent = playerScore;
             }
         }
-    }
+    };
     // Function to run when game is over
     const gameOver = (playerOptions, movesLeft) => {
 
@@ -95,7 +142,7 @@ const choiceNumber = Math.floor(Math.random() * 3);
 
         playerOptions.forEach(option => {
             option.style.display = 'none';
-        })
+        });
 
 
         chooseMove.innerText = 'Game Over!!';
@@ -120,16 +167,21 @@ const choiceNumber = Math.floor(Math.random() * 3);
         reloadBtn.style.display = 'flex';
         reloadBtn.addEventListener('click', () => {
             window.location.reload();
-        })
-    }
+        });
+
+
+
+    };
 
     // Calling playGame function inside game
     playGame();
 
-}
+};
 
 // Calling the game function
 game();
 
 
-                
+
+
+
