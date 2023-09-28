@@ -12,8 +12,19 @@ In the GitHub repository, navigate to the Settings tab
 From the source section drop-down menu, select the Master Branch
 Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
 The live link can be found here-<https://opoku1968.github.io/Game-for-all/>
-In my html ,i link html to style,created my Logo ,title, displayfinger images, display score of player and computer, number of moves lfte before game over, options available for player to play game, final result of game, reload the game.
+In my html ,i link html to style,created my Logo ,title, display finger images, display score of player and computer, number of moves lfte before game over, options available for player to play game, final result of game, reload the game.
 
-In style
+ style players, creat universal selector, style: title, score board,three button, reload button. creat responsive.
+
+ function to play game.
+ function to start game.
+ function to check who wins.
+ function to call gameover.
+ function to decide who the winner is.
+ functin to run when game over.
+
+
+
+
 
 

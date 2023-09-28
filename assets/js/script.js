@@ -4,7 +4,7 @@ const choices = [
     {
         id: 1,
         name: "Rock",
-        image: "assets/images/rock.jpg"
+        image: "assets/images/Rock.jpg"
     },
     {
         id: 2,

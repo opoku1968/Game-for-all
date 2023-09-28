@@ -32,7 +32,7 @@
 }
 
 
-/* To center everything in game */
+/* To center everything in the game */
 .game {
     display: flex;
     flex-direction: column;
