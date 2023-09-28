@@ -31,7 +31,6 @@
     margin-right: 90%;
 }
 
-.pl3 {}
 
 /* To center everything in game */
 .game {
@@ -129,3 +128,4 @@
     .options {
         width: 100vw;
     }
+}
